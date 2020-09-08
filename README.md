@@ -8,6 +8,8 @@ Add Transit to your project. You can either install it from the Godot Asset Libr
 
 Once you have the files in the right place, add `Transit.tscn` to your project's AutoLoad list in the project settings.
 
+![GIF showing how to add Transit to a project's AutoLoad list](meta/autoload.gif)
+
 *Important: Make sure you add the scene file (ending in `.tscn`) to the AutoLoad list. Adding the GDScript file (ending in `.gd`) **will not work**.*
 
 Now you can reference `/root/Transit` in your scripts to change scenes in much the same way you would with `SceneTree.change_scene`. For example:
@@ -72,3 +74,7 @@ Transit works by creating a `ColorRect` on canvas layer #128 (the highest.) This
 5. The `ColorRect` mouse filtering is set back to `MOUSE_FILTER_IGNORE` to allow UI interactions.
 6. The same fade animation as before is played in reverse to fade the `ColorRect` alpha back to 0.
 7. The `scene_changed` signal is emitted.
+
+## How it Looks
+
+![GIF showing Transit in action](meta/transit.gif)
