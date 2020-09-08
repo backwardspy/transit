@@ -1,4 +1,4 @@
-# Transit
+![Transit](meta/logo.png)
 
 A simple Godot asset for smooth scene transitions
 
