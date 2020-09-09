@@ -14,13 +14,11 @@ Once you have the files in the right place, add `Transit.tscn` to your project's
 
 *Important: Make sure you add the scene file (ending in `.tscn`) to the AutoLoad list. Adding the GDScript file (ending in `.gd`) **will not work**.*
 
-Now you can reference `/root/Transit` in your scripts to change scenes in much the same way you would with `SceneTree.change_scene`. For example:
+Now you can call `Transit.change_scene` in your scripts to change scenes in much the same way you would with `SceneTree.change_scene`. For example:
 
 ```GDScript
-onready var _transit := $"/root/Transit`
-
 func on_button_pressed():
-    _transit.change_scene("res://Game.tscn")
+    Transit.change_scene("res://Game.tscn")
 ```
 
 ## Documentation
@@ -39,13 +37,13 @@ Parameters:
 Example:
 ```GDScript
 # A simple fade transition to `Game.tscn`.
-_transit.change_scene("res://Game.tscn")
+Transit.change_scene("res://Game.tscn")
 
 # Then same as above, except each fade (out and in) takes half a second.
-_transit.change_scene("res://Game.tscn", 0.5)
+Transit.change_scene("res://Game.tscn", 0.5)
 
 # The same as above, except now it waits for a full second before fading out.
-_transit.change_scene("res://Game.tscn", 0.5, 1.0)
+Transit.change_scene("res://Game.tscn", 0.5, 1.0)
 ```
 
 ### Set fade-to color
@@ -60,10 +58,10 @@ Parameters:
 Example:
 ```GDScript
 # Set fade color to white.
-_transit.set_color(Color.white)
+Transit.set_color(Color.white)
 
 # This will now fade to white before changing to `Game.tscn`
-_transit.change_scene("res://Game.tscn")
+Transit.change_scene("res://Game.tscn")
 ```
 
 ## Implementation Details
