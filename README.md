@@ -6,11 +6,15 @@ A simple Godot asset for smooth scene transitions
 
 ## Usage
 
-Add Transit to your project via the AssetLib tab in Godot, then add `Transit.tscn` to your project's AutoLoad list in the project settings.
+Add Transit to your project via the AssetLib tab in Godot. I highly recommend deselecting everything but the `transit` folder when first installing Transit.
+
+![Image showing the package installer with only transit selected](meta/package-installer.png)
+
+Once Transit is installed, add `Transit.tscn` to your project's AutoLoad list in the project settings.
 
 ![GIF showing how to add Transit to a project's AutoLoad list](meta/autoload.gif)
 
-*Important: Make sure you add the scene file (ending in `.tscn`) to the AutoLoad list. Adding the GDScript file (ending in `.gd`) **will not work**.*
+***Important:** Make sure you add the scene file (ending in `.tscn`) to the AutoLoad list. Adding the GDScript file (ending in `.gd`) **will not work**.*
 
 Now you can call `Transit.change_scene` in your scripts to change scenes in much the same way you would with `SceneTree.change_scene`. For example:
 
