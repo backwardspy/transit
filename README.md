@@ -6,9 +6,7 @@ A simple Godot asset for smooth scene transitions
 
 ## Usage
 
-Add Transit to your project. You can either install it from the Godot Asset Library, add this repository as a submodule of your project, or download `transit/Transit.gd` and `transit/Transit.tscn` into the location of your choosing.
-
-Once you have the files in the right place, add `Transit.tscn` to your project's AutoLoad list in the project settings.
+Add Transit to your project via the AssetLib tab in Godot, then add `Transit.tscn` to your project's AutoLoad list in the project settings.
 
 ![GIF showing how to add Transit to a project's AutoLoad list](meta/autoload.gif)
 
