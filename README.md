@@ -4,6 +4,8 @@
 
 A simple Godot asset for smooth scene transitions
 
+![GIF showing Transit in action](meta/transit.gif)
+
 ## Usage
 
 Add Transit to your project via the AssetLib tab in Godot. I highly recommend deselecting everything but the `transit` folder when first installing Transit.
@@ -76,7 +78,3 @@ Transit works by creating a `ColorRect` on canvas layer #128 (the highest.) This
 5. The `ColorRect` mouse filtering is set back to `MOUSE_FILTER_IGNORE` to allow UI interactions.
 6. The same fade animation as before is played in reverse to fade the `ColorRect` alpha back to 0.
 7. The `scene_changed` signal is emitted.
-
-## How it Looks
-
-![GIF showing Transit in action](meta/transit.gif)
