@@ -2,7 +2,7 @@
 
 [![Transit on the Godot Asset Library](https://img.shields.io/badge/Godot%20Asset%20Library-Transit-blue)](https://godotengine.org/asset-library/asset/719)
 
-A simple Godot asset for smooth scene transitions
+A simple Godot asset for smooth scene transitions.
 
 ![GIF showing Transit in action](meta/transit.gif)
 
